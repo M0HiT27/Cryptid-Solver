@@ -38,13 +38,13 @@ export default function Home() {
           3 Players
         </Link>
         <Link
-          href={"/players/3"}
+          href={"/players/4"}
           className="w-full p-4 rounded-2xl border-2 bg-blue-500 border-blue-900 flex items-center justify-center text-white"
         >
           4 Players
         </Link>
         <Link
-          href={"/players/3"}
+          href={"/players/5"}
           className="w-full p-4 rounded-2xl border-2 bg-green-500 border-green-900 flex items-center justify-center text-white"
         >
           5 Players
