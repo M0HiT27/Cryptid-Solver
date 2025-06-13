@@ -203,7 +203,15 @@ export default function PlayArena({ players }: { players: number }) {
       </div>
       <button
         className="rounded-xl bg-purple-700 text-white w-full p-4 hover:cursor-pointer"
-        onClick={() => setCurrentPlayer((prev) => ((prev + 1) % players) + 1)}
+        onClick={() =>
+          setCurrentPlayer((prev) => {
+            if (prev + 1 <= players) {
+              return prev + 1;
+            } else {
+              return 1;
+            }
+          })
+        }
       >
         Next
       </button>
